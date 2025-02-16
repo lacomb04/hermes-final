@@ -1,0 +1,31 @@
+.sobre .bg-sobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Garante que a posição seja relativa ao fluxo normal da página */
+  margin: 7vh auto 0 auto; /* Define uma margem superior para afastá-lo do header */
+  width: 40vw;
+  padding: 0 0 10px 0;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1026px) {
+  .sobre .bg-sobre {
+    width: 70vw;
+    margin: 50vh auto 0 auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .sobre .bg-sobre {
+    width: 90vw;
+    margin: 45vh auto 0 auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .sobre .bg-sobre {
+    width: 100vw;
+    margin: 30vh auto 0 auto;
+  }
+}

@@ -1,0 +1,78 @@
+@import url(var.css);
+.banner {
+  width: 45vw;
+  margin: 5vw auto 5vw auto;
+}
+@media (max-width: 1024px) {
+  .banner {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    width: 100vw;
+    margin: 10vw auto 10vw auto;
+  }
+}
+
+/* Ajustes para celulares */
+@media (max-width: 375px) {
+  .banner {
+    width: 100vw;
+  }
+}
+
+/* Segundo banner */
+.banner-dentista {
+  margin-top: 2em;
+  position: relative;
+}
+.banner-dentista img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute; /* Garante que a posição seja relativa ao fluxo normal da página */
+  margin: 0 auto 0 auto; /* Define uma margem superior para afastá-lo do header */
+  width: 40vw;
+  margin-bottom: 7em;
+}
+.faixa {
+  background-color: var(--cor-primaria); /* Cor da faixa */
+  padding: 20px; /* Espaçamento interno */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Largura da faixa no desktop */
+  height: 25vw;
+}
+
+@media (max-width: 1026px) {
+  .banner-dentista img {
+    width: 100vw;
+    margin: 28vh auto 0 auto;
+  }
+  .faixa {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+@media (max-width: 800px) {
+  .banner-dentista img {
+    width: 100vw;
+    margin: 18vh auto 0 auto;
+  }
+  .faixa {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+@media (max-width: 400px) {
+  .banner-dentista img {
+    width: 100vw;
+    margin: 18vh auto 0 auto;
+  }
+  .faixa {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}

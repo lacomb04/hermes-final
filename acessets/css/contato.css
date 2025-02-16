@@ -1,0 +1,103 @@
+@import url(var.css);
+.contato {
+  padding: 40px 40px 0 40px;
+  text-align: left;
+}
+
+.contato .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 40vw;
+}
+
+.contato h2 {
+  font-family: var(--fonte-segundaria);
+  color: var(--cor-primaria);
+  font-size: 32px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.contato p {
+  color: #fff;
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.contato i {
+  margin-right: 10px;
+  color: #a66c36; /* Cor do ícone */
+}
+
+.qr-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.qr-section p {
+  color: #fff;
+  font-size: 12px;
+  margin-left: 20px;
+  font-weight: 200;
+}
+
+.qr-section img {
+  width: 100px; /* Ajuste o tamanho do QR Code conforme necessário */
+  height: 100px;
+}
+
+.section-botao__consulta {
+  display: flex;
+  justify-content: center; /* Alinha horizontalmente no centro */
+  align-items: center; /* Alinha verticalmente no centro */
+}
+
+.botao-consulta {
+  font-family: var(--fonte-segundaria);
+  background-color: var(--cor-primaria); /* Cor de fundo do botão */
+  color: var(--cor-segundaria-dark); /* Cor do texto */
+  font-size: 16px; /* Tamanho da fonte */
+  padding: 15px 30px; /* Espaçamento interno */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.637); /* Sombra no botão */
+  border-radius: 25px; /* Bordas arredondadas */
+  border: none; /* Remove a borda padrão */
+  text-decoration: none; /* Remove o sublinhado, caso haja */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Transição suave para a cor de fundo e sombra */
+  margin-top: 30px; /* Espaço acima do botão */
+  margin-bottom: 5px; /* Espaço abaixo do botão */
+  display: block; /* Faz o botão se comportar como bloco */
+  margin-left: auto; /* Alinha automaticamente à esquerda */
+  margin-right: auto; /* Alinha automaticamente à direita */
+}
+
+.botao-consulta:hover {
+  background-color: var(--cor-segundaria); /* Cor do fundo ao passar o mouse */
+  color: var(--cor-primaria);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra no botão */
+}
+
+.section-footer {
+  display: flex;
+  margin: 0 auto 0 auto;
+  width: 180px;
+  justify-content: center; /* Alinha horizontalmente no centro */
+  align-items: center; /* Alinha verticalmente no centro */
+}
+
+.footer-image {
+  display: block; /* Faz a imagem se comportar como bloco */
+  width: 30vw; /* Largura da imagem */
+  margin-left: auto; /* Alinha automaticamente à esquerda */
+  margin-right: auto; /* Alinha automaticamente à direita */
+  object-fit: contain; /* Garante que a imagem se ajuste sem distorções */
+}
+
+@media (max-width: 800px) {
+  .contato .container {
+    width: 80vw;
+  }
+}
